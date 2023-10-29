@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background: #171717; /* Dark background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.main {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.main .image-container .image img {
+  width: 100%; /* Image spans the container */
+  max-width: 400px; /* Limit image size */
+  border: 5px solid #00bcd4; /* Teal border around the image */
+  border-radius: 50%; /* Rounded image */
+}
+
+.main .image-container h1 {
+  color: #00bcd4;
+  font-size: 40px;
+  margin-top: 20px; /* Increase space above the title */
+}
+
+.main .image-container p {
+  color: #aed0d0; /* Light gray text */
+  font-size: 20px; /* Larger text for description */
+  margin: 20px 0; /* Spacing around the description */
+}
+
+.main .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: #00bcd4;
+  border-radius: 30px; /* Rounded input container */
+  margin-top: 20px; /* Space between description and input */
+}
+
+.main .input .talk {
+  background: #171717; /* Dark button color */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Circular button */
+  margin-right: 10px; /* Space between button and text */
+  transition: background 0.3s; /* Smooth hover effect */
+}
+
+.main .input .talk:hover {
+  background: #00bcd4; /* Teal button on hover */
+}
+
+.main .input .talk i {
+  font-size: 20px;
+  color: #fff; /* White icon color */
+}
+
+.main .input .content {
+  color: #fff; /* White text color */
+  font-size: 20px; /* Larger text for the input */
+}
